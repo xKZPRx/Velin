@@ -1,0 +1,26 @@
+<svg width="2000" height="2000" viewBox="0 0 2000 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8_37)">
+<path d="M1900 0H100C44.7715 0 0 44.7715 0 100V1900C0 1955.23 44.7715 2000 100 2000H1900C1955.23 2000 2000 1955.23 2000 1900V100C2000 44.7715 1955.23 0 1900 0Z" fill="#8B5E3C"/>
+<path d="M1400 400H600C544.772 400 500 444.772 500 500V1500C500 1555.23 544.772 1600 600 1600H1400C1455.23 1600 1500 1555.23 1500 1500V500C1500 444.772 1455.23 400 1400 400Z" fill="#F7F3ED"/>
+<path d="M1000 1462L688.231 397.75H1311.77L1000 1462Z" fill="#8B5E3C"/>
+<rect x="378" y="492" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="502" width="225" height="60" rx="30" fill="#F7F3ED"/>
+<rect x="378" y="648" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="658" width="225" height="60" rx="30" fill="#F7F3ED"/>
+<rect x="378" y="804" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="814" width="225" height="60" rx="30" fill="#F7F3ED"/>
+<rect x="378" y="960" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="970" width="225" height="60" rx="30" fill="#F7F3ED"/>
+<rect x="378" y="1116" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="1126" width="225" height="60" rx="30" fill="#F7F3ED"/>
+<rect x="378" y="1272" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="1282" width="225" height="60" rx="30" fill="#F7F3ED"/>
+<rect x="378" y="1428" width="245" height="80" rx="40" fill="#8B5E3C"/>
+<rect x="388" y="1438" width="225" height="60" rx="30" fill="#F7F3ED"/>
+</g>
+<defs>
+<clipPath id="clip0_8_37">
+<rect width="2000" height="2000" fill="white"/>
+</clipPath>
+</defs>
+</svg>
