@@ -6,27 +6,28 @@ import styles from "./CustomTitleBar.module.css";
 
 function CustomTitleBar() {
     return (
-        <div className={styles.container}>
+        <nav className={styles.container}>
 
             <img src={logo} alt="Velin" className={styles.logo} />
             <h1 className={styles.filename}>document.txt</h1>
 
             <div className={styles.windowControls}>
 
-                <button className={styles.button} onClick={() => window.electron.minimize()}>
-                    <img src={minimizeIcon} alt="Minimize" />
+                <button className={styles.button} onClick={() => window.electron.minimize()} aria-label="Minimize">
+                    <img src={minimizeIcon} />
                 </button>
 
-                <button className={styles.button} onClick={() => window.electron.restore()}>
-                    <img src={restoreIcon} alt="Restore" />
+                <button className={styles.button} onClick={() => window.electron.restore()} aria-label="Restore">
+                    <img src={restoreIcon} />
                 </button>
 
-                <button className={`${styles.button} ${styles.close}`} onClick={() => window.electron.close()}>
-                    <img src={closeIcon} alt="Close" />
+                <button className={`${styles.button} ${styles.close}`} onClick={() => window.electron.close()} aria-label="Close">
+                    <img src={closeIcon} />
                 </button>
 
             </div>
-        </div>
+            
+        </nav>
     )
 }
 
