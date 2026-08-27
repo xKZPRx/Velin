@@ -20,16 +20,24 @@ app.on('ready', ()=> {
         mainWindow.minimize();
     });
 
+    ipcMain.on('window-maximize', () => {
+        mainWindow.maximize();
+    });
+
     ipcMain.on('window-restore', () => {
-        if (mainWindow.isMaximized()) {
-            mainWindow.unmaximize();
-        } else {
-            mainWindow.maximize();
-        }
+        mainWindow.unmaximize();
     });
 
     ipcMain.on('window-close', () => {
         mainWindow.close();
+    });
+
+    mainWindow.on('maximize', () => {
+        mainWindow.webContents.send('window-maximized', true);
+    });
+
+    mainWindow.on('unmaximize', () => {
+        mainWindow.webContents.send('window-maximized', false);
     });
 
     if(isDev()) {

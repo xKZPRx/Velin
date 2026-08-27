@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
+
 import logo from "../../assets/logo.svg";
 import minimizeIcon from "../../assets/minimize.svg";
+import maximizeIcon from "../../assets/maximize.svg";
 import restoreIcon from "../../assets/restore.svg";
 import closeIcon from "../../assets/close.svg";
+
 import styles from "./CustomTitleBar.module.css";
 
 function CustomTitleBar() {
+    const [isMaximized, setIsMaximized] = useState(false);
+
+    useEffect(() => {
+        window.electron.onMaximized(setIsMaximized);
+    }, []);
+
     return (
         <nav className={styles.container}>
 
@@ -17,12 +27,22 @@ function CustomTitleBar() {
                     <img src={minimizeIcon} />
                 </button>
 
-                <button className={styles.button} onClick={() => window.electron.restore()} aria-label="Restore">
-                    <img src={restoreIcon} />
+                <button 
+                    className={styles.button}
+                    onClick={() => {
+                        if (isMaximized) {
+                            window.electron.restore();
+                        } else {
+                            window.electron.maximize();
+                        }
+                    }} 
+                aria-label={isMaximized ? "Restore" : "Maximize"}
+                >
+                    <img src={isMaximized ? restoreIcon : maximizeIcon} alt="" />
                 </button>
 
                 <button className={`${styles.button} ${styles.close}`} onClick={() => window.electron.close()} aria-label="Close">
-                    <img src={closeIcon} />
+                    <img src={closeIcon} alt="" />
                 </button>
 
             </div>

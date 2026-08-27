@@ -13,7 +13,7 @@ function MenuBar() {
             </div>
 
             <button className={`${styles.button} ${styles.settings}`} aria-label="Settings">
-                <img src={settingsIcon}></img>
+                <img src={settingsIcon} alt=""></img>
             </button>
 
         </nav>
