@@ -9,6 +9,7 @@
     overflow: hidden;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
     -webkit-app-region: no-drag;
 }
 
